@@ -91,7 +91,7 @@ public class PlatoController {
 	}
 	
 	@GetMapping("/{idPlato}")
-	public ResponseEntity<Plato> obtenerLibroId(@PathVariable Integer idPlato) {
+	public ResponseEntity<Plato> obtenerPlatoId(@PathVariable Integer idPlato) {
 		
 		Optional<Plato> platoOptional = platoRepo.findById(idPlato);
 		if(!platoOptional.isPresent()) {
